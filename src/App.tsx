@@ -1,7 +1,9 @@
-function App() {
+import { Outlet } from "react-router-dom";
+
+export default function App() {
   return (
-    <div className="text-9xl text-amber-500 border absolute top-0">Test</div>
+    <main className="min-h-screen border flex items-center justify-center text-center w-full bg-gray-50 text-gray-900 p-4 mx-auto">
+      <Outlet />
+    </main>
   );
 }
-
-export default App;
